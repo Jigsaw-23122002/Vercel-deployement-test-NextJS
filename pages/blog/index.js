@@ -17,7 +17,7 @@ const blog=({data})=>{
             <section>
                 {data.slice(0,5).map((curr)=>{
                     return (
-                        <div>
+                        <div key={curr.id}>
                             <h3>{curr.id}</h3>
                             <Link href={`/blog/${curr.id}`}>
                             <h2>{curr.title}</h2>

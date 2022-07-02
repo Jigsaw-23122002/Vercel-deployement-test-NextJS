@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 
-const error = () => {
+
+
+const Error = () => {
   const router = useRouter();
   const handleInput = () => {
     router.push("/");
@@ -31,4 +33,4 @@ const error = () => {
   );
 };
 
-export default error;
+export default Error;
